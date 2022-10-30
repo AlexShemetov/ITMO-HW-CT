@@ -1,6 +1,7 @@
 .*
 _*
 *.class
+*.exe
 *.7z
 *.zip
 *test*
