@@ -1,0 +1,70 @@
+:root {
+    --positive-score-color: rgb(0, 128, 0);
+    --post-line-color: rgb(185, 185, 185);
+    --info-color: rgb(150, 150, 150);
+}
+
+main article {
+    padding: 1rem;
+}
+
+main article .title {
+    color: var(--caption-color);
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+main article .information {
+    color: var(--info-color);
+    font-size: 0.95rem;
+    margin-top: 0.3rem;
+}
+
+main article .body {
+    padding-left: 1rem;
+    border-left: 4px solid var(--post-line-color);
+}
+
+main article .body :last-child {
+    -webkit-margin-after: 0;
+}
+
+main article .attachment {
+    padding-left: 1.5rem;
+    margin: 0.5rem 0;
+}
+
+main article .attachment li {
+    list-style: url(../img/paperclip-16x16.png);
+    color: var(--info-color);
+}
+
+main article .footer {
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    padding: 0.5rem;
+}
+
+main article .footer .left, main article .footer .right {
+    display: inline;
+}
+
+main article .footer .right {
+    float: right;
+    margin: 0.1rem;
+}
+
+main article .footer .positive-score {
+    font-weight: bold;
+    color: var(--positive-score-color);
+}
+
+main article .footer .left *, .right * {
+    vertical-align: middle;
+}
+
+main article .footer .right > img {
+    position: relative;
+    top: -0.1rem;
+    margin-left: 0.5rem;
+}

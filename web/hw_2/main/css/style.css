@@ -1,0 +1,117 @@
+:root {
+    --border-color: rgb(185, 185, 185);
+    --border-radius: 6px;
+    --menu-text-color: rgb(51, 51, 51);
+    --row-background-color: rgb(248, 248, 248);
+    --header-color: rgb(59, 89, 152);
+    font-size: 12px;
+    font-family: Verdana, sans-serif;
+}
+
+html {
+    min-width: 800px;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+header {
+    position: relative;
+}
+
+#codeforces-main-img {
+    width: 270px;
+}
+
+header .languages {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+header .enter-or-register-box {
+    position: absolute;
+    top: 32px;
+    right: 0px;
+}
+
+header nav {
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    height: 2.5rem;
+    line-height: 0.5rem;
+}
+
+header nav ul {
+    padding-left: 0.5rem;
+    float: left;
+}
+
+header nav ul li {
+    display: inline;
+    padding-left: 1.5rem;
+}
+
+header nav ul li a {
+    color: var(--menu-text-color);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.middle {
+    margin-top: 1rem;
+    overflow: auto;
+}
+
+aside {
+    float: right;
+    width: 20rem;
+}
+
+main {
+    margin-right: 21rem;
+}
+
+footer {
+    margin-top: 2rem;
+    border-top: 1px solid var(--border-color);
+    padding-top: 0.5rem;
+    text-align: center;
+}
+
+aside section {
+    margin-bottom: 1rem;
+    border: 1px solid var(--border-color);
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+}
+
+aside section .header {
+    border-bottom: 1px solid var(--border-color);
+    padding: 0.25rem;
+    font-weight: bold;
+    color: var(--header-color);
+}
+
+aside section .header:before {
+    content: "→";
+}
+
+aside section .body {
+    padding: 1rem;
+}
+
+aside section .footer {
+    border-top: 1px solid var(--border-color);
+    overflow: auto;
+    padding: 0.25rem;
+}
+
+aside section .footer a {
+    float: right;
+    font-size: 0.8rem;
+}
+
+aside section .footer a:after {
+    content: " →";
+}

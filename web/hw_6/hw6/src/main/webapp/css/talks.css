@@ -1,0 +1,4 @@
+.talks-field .field {
+    display: flex;
+    align-items: flex-start;
+}

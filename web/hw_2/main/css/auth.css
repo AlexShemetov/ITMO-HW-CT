@@ -1,0 +1,83 @@
+:root {
+    --small-font-size: 0.8rem;
+}
+
+.login-form-box {
+    border: 1px solid var(--border-color);
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+    width: 27rem;
+    margin: 0 auto;
+}
+
+.login-form-box .header {
+    border-bottom: 1px solid var(--border-color);
+    color: var(--header-color);
+    font-weight: bold;
+    padding: 0.2rem;
+}
+
+.login-form-box .body .field .name {
+    grid-area: name;
+    justify-self: end;
+    padding: 1.5rem 1rem 0 0;
+}
+
+.login-form-box .body .field .value {
+    grid-area: value;
+    padding: 1.5rem 3.5rem 0 0;
+}
+
+.login-form-box .body .field .value input {
+    width: 100%;
+}
+
+.login-form-box .body .field .error {
+    grid-area: error;
+    font-size: var(--small-font-size);
+    color: red;
+}
+
+.login-form-box .body .field {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-areas: "name value" ". error";
+    align-items: center;
+}
+
+.login-form-box .body .checkbox-field {
+    text-align: center;
+    font-size: 0.85rem;
+    margin: 1.5rem 0 0 2rem;
+}
+
+.login-form-box .body .button-field {
+    text-align: center;
+    margin: 2rem 0.5rem 0 0.5rem;
+}
+
+.login-form-box .body .button-field input {
+    padding: 0 1.4rem;
+}
+
+.login-form-box .body .links {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.login-form-box .body .links a{
+    font-size: var(--small-font-size);
+    margin: 0.3rem;
+}
+
+.login-form-box .footer {
+    border-top: 1px solid var(--border-color);
+    padding: 0.3rem;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.login-form-box .footer a {
+    margin-left: 1rem;
+    font-size: var(--small-font-size);
+}

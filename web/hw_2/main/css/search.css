@@ -1,0 +1,17 @@
+:root {
+    --background-color: rgb(244, 244, 244);
+    --focus-color: rgb(143, 177, 232);
+}
+
+nav .search {
+    float: right;
+    padding-right: 1rem;
+    padding-top: 0.3rem;
+}
+
+nav .search input {
+    background-color: var(--background-color);
+    background-image: url(../img/search-16x16.png);
+    background-repeat: no-repeat;
+    padding-left: 1.5rem;
+}

@@ -1,0 +1,33 @@
+:root {
+    --border-color: rgb(185, 185, 185);
+    --border-radius: 6px;
+    --row-background-color: rgb(248, 248, 248);
+}
+
+/* .datatable {
+    background-color: var(--border-color);
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+} */
+
+.caption {
+    padding: 0.2rem 0 0.2rem 0.5rem;
+}
+
+.datatable table {
+    border: 1px solid var(--border-color);
+    background-color: white;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.datatable td, .datatable th {
+    text-align: center;
+    border-top: 1px solid var(--border-color);
+    border-right: 1px solid var(--border-color);
+    padding: 0.2em;
+}
+
+.datatable tr:nth-child(2n + 1) td {
+    background-color: var(--row-background-color);
+}
